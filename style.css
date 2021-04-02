@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 45px;
+}
+
+.header {
+  position: relative;
+}
+
+.body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.body::before {
+  position: absolute;
+  content: "";
+  background-image: url("images/wave.svg");
+  height: 150%;
+  width: 100%;
+  top: -50%;
+  left: 23%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  z-index: -1;
+}
+
+.logo__wrapper {
+  font-weight: 300;
+  font-size: 32px;
+  color: #007470;
+  text-transform: uppercase;
+}
+
+.header__inner {
+  justify-content: flex-start;
+  padding: 45px;
+}
+
+.navigation {
+  margin-left: 12%;
+  font-weight: 300;
+  font-size: 26px;
+  color: #2c3834;
+  text-transform: uppercase;
+}
+
+.menu__link {
+  width: 100%;
+  position: relative;
+  padding: 10px;
+}
+
+.menu__item {
+  position: relative;
+  margin-left: 25px;
+}
+
+.menu__link::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  top: 100%;
+  left: 0%;
+  height: 1px;
+  transform: scale(0);
+  background-color: #007470;
+  transition: 0.3s linear;
+}
+
+.menu__link:hover::before {
+  transform: scale(1);
+}
+
+.banner__inner {
+  position: relative;
+}
+
+.banner__title {
+  font-weight: 300;
+  font-size: 90px;
+  line-height: 119px;
+  max-width: 500px;
+  color: #007470;
+  margin-bottom: 50px;
+}
+
+.button {
+  display: inline-block;
+  padding: 30px 50px;
+  font-weight: 500;
+  font-size: 35.2px;
+  line-height: 41px;
+  color: #007470;
+  border: 2px solid #007470;
+  border-radius: 60px;
+  transition: 0.3s linear;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  transform: scale(1.05);
+}
+
+.social__link {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+address {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 35px;
+  color: #2c3834;
+  margin-top: 20px;
+}
+
+.county {
+  margin: 0px 12px;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.banner_img {
+  position: absolute;
+  width: 620px;
+  top: -20px;
+  left: 42%;
+}
+
+@media screen and (max-width: 1353px) {
+  .body::before {
+    height: 151%;
+    width: 100%;
+    top: -51%;
+    left: 27.5%;
+  }
+
+  .footer__inner {
+    padding-bottom: 28px;
+  }
+
+  address {
+    margin-top: 25px;
+  }
+}
