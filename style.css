@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  /* outline: 1px solid red; */
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
@@ -33,6 +34,7 @@ a {
 .body {
   position: relative;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 .body::before {
@@ -142,10 +144,15 @@ address {
   margin-top: 20px;
 }
 
-.county {
+.country {
   margin: 0px 12px;
-  font-size: 22px;
-  color: #ffffff;
+  font-size: 18px;
+  /* color: #2c3834; */
+  color: #fff;
+}
+
+.country-title {
+  font-size: 20px;
 }
 
 .banner_img {
