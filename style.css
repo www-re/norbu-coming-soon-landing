@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  /* outline: 1px solid red; */
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
@@ -29,7 +30,6 @@ a {
 .header {
   position: relative;
 }
-
 
 .logo__wrapper {
   font-weight: 300;
@@ -156,7 +156,7 @@ a {
   margin-left: 30px;
 }
 
-.county {
+.country {
   margin: 0px 12px;
 }
 

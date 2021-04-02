@@ -1,0 +1,84 @@
+.diagram{
+    animation: moveTrackY 2s ease-in infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+.dirgam2{
+    animation: moveTrack 2s ease-in infinite alternate;
+    transform-origin: left;
+    transform-box: fill-box;
+}
+
+.diargam3{
+    animation: moveTrackY2 3s ease-in infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+.del02{
+    animation-delay: 0.2s;
+}
+
+.del03{
+    animation-delay: 0.3s;
+}
+
+.del04{
+    animation-delay: 0.4s;
+}
+
+.del05{
+    animation-delay: 0.5s;
+}
+
+.del06{
+    animation-delay: 0.6s;
+}
+
+.del08{
+    animation-delay: 0.8s;
+}
+
+.del07{
+    animation-delay: 0.7s;
+}
+
+.del09{
+    animation-delay: 0.9s;
+}
+
+.del10{
+    animation-delay: 1s;
+}
+
+.del12{
+    animation-delay: 1.2s;
+}
+
+@keyframes moveTrackY{
+    0%,20%{
+        transform:scaleY(0);
+    }
+    80%,100%{
+        transform:scaleY(1);
+    }
+}
+
+@keyframes moveTrackY2{
+    0%,20%{
+        transform:scaleY(0);
+    }
+    70%,100%{
+        transform:scaleY(1);
+    }
+}
+
+@keyframes moveTrack{
+    0%,20%{
+        transform:scaleX(1);
+    }
+    80%,100%{
+        transform:scaleX(0);
+    }
+}
